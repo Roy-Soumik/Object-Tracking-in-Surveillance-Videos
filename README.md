@@ -1,2 +1,4 @@
 # Object-Tracking-in-Surveillance-Videos
 The project focuses on object detection and tracking using YOLOv4. YOLOv4 is a real-time deep learning model. It detects objects in video frames and tracks their movement. The output is a processed video with bounding boxes and unique IDs for each object.
+
+This project demonstrates the power and versatility of object tracking in surveillance videos using advanced computer vision techniques. By leveraging models like YOLO and methods like optical flow, it highlights the potential for real-time, efficient, and scalable solutions in dynamic environments. The applications extend beyond surveillance, including traffic management, sports analytics, and robotics. As advancements in AI and edge computing continue, such systems will further enhance automation, decision-making, and safety across industries.
