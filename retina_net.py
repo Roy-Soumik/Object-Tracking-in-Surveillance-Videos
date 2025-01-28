@@ -6,20 +6,19 @@ import sys
 from pathlib import Path
 
 if __name__ == "__main__":
-    # Get input and output paths from command line arguments
+
     input_file_path = sys.argv[1]
     output_file_path = sys.argv[2]
 
-    # Strip the extension if it exists and ensure it's a valid path
+
     output_file_path = str(Path(output_file_path).with_suffix(""))
 
-    # Create the output directory if it doesn't exist
+
     output_directory = os.path.dirname(output_file_path)
     if not os.path.exists(output_directory):
         print(f"Output directory {output_directory} does not exist. Creating it...")
         os.makedirs(output_directory)
 
-    # Start timing
     start_time = time.time()
 
     execution_path = os.getcwd()
@@ -38,10 +37,9 @@ if __name__ == "__main__":
         log_progress=True
     )
 
-    # End timing and calculate the duration
+
     end_time = time.time()
     execution_duration = end_time - start_time
 
-    # Debug: Print where the video is saved
     print(f"Video saved at: {output_file_path}")
     print(f"Time taken to run the code: {execution_duration} seconds")
