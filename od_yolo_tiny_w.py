@@ -5,10 +5,8 @@ import torch
 import tensorflow as tf
 sess = tf.compat.v1.keras.backend.get_session()
 
-# Start timing
 start_time = time.time()
 
-# Set the execution path
 execution_path = os.getcwd()
 
 
@@ -46,9 +44,7 @@ video_detector.detectObjectsFromVideo(
     per_minute_function=forMinute,
     minimum_percentage_probability=30
 )
-# End timing and calculate the duration
 end_time = time.time()
 execution_duration = end_time - start_time
 
-# print("Video saved at:", output_file_path)
 print("Time taken to run the code:", execution_duration, "seconds")
